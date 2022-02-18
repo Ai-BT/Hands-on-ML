@@ -75,16 +75,12 @@ print(X_b.shape)
 
 # %%
 
-# rand, randn 차이점 [행,열]
-# rand 0 ~ 1의 균일분포 표준정규분포 난수를 생성
-# randn 평균 0, 표준편차 1의 가우시안 표준정규분포 난수를 생성
+# 0 - 1 의 균일분포 표준정규분포 난수를 생성
+a = np.random.rand(3,2)
+print(a)
 
-a = np.random.rand(2,2) 
-print('a = ',a)
+# 평균 0, 표준편차 1의 가우시안 표준정규분포 난수를 생성
+b = np.random.randn(3,2)
+print(b)
 
-b = np.random.randn(2,2)
-print('b = ',b)
-
-# 색상: b(파란색), g(초록색), r(빨간색), c(청록색), y(노란색), k(검은색), w(흰색)
-# 마커: o(원), v(역삼각형), ^(삼각형), s(네모), +(플러스), .(점)
-plt.plot(X, y, "b.")
+# %%
